@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdgeDeploy Speed Matrix - Demo Application</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div className="glow-bg"></div>
+
+  <header className="navbar">
+    <div className="logo flex items-center">
+      <div className="pulse-dot"></div>
+      <h1>EdgeMatrix <span>v2.0</span></h1>
+    </div>
+    <div className="status-badge">
+      ⚡ SERVED FROM EDGE CDN
+    </div>
+  </header>
+
+  <main className="container">
+    <section className="hero">
+      <h2>Global Edge Performance Dashboard</h2>
+      <p>Interactive test application deployed via EdgeDeploy CDN platform</p>
+    </section>
+
+    <div className="grid">
+      <div className="card">
+        <h3>⚡ Real-Time Latency Probe</h3>
+        <p className="card-desc">Measures response time from your nearest edge node</p>
+        <div className="metric" id="latencyMetric">0 ms</div>
+        <button className="btn btn-primary" id="pingBtn">Ping Edge Node</button>
+      </div>
+
+      <div className="card">
+        <h3>📊 Interactive Counter</h3>
+        <p className="card-desc">State persistence test across user interactions</p>
+        <div className="metric" id="counterVal">0</div>
+        <div className="button-group">
+          <button className="btn btn-secondary" id="decrementBtn">-</button>
+          <button className="btn btn-primary" id="incrementBtn">+</button>
+        </div>
+      </div>
+
+      <div className="card">
+        <h3>🎨 Theme Switcher</h3>
+        <p className="card-desc">Toggle color schemes in real time</p>
+        <div className="theme-preview" id="themePreview">Active Mode: Dark Cyberpunk</div>
+        <button className="btn btn-accent" id="toggleThemeBtn">Toggle Color Theme</button>
+      </div>
+    </div>
+
+    <section className="commit-banner">
+      <h3>🚀 Test GitHub Commit Workflow</h3>
+      <p>Edit this file, commit to your GitHub repository, and watch EdgeDeploy auto-deploy your changes!</p>
+      <code id="versionTag">Current Commit Version: v1.0.0-initial</code>
+    </section>
+  </main>
+
+  <footer>
+    <p>Deployed with ❤️ on EdgeDeploy Platform</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

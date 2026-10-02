@@ -1,0 +1,11 @@
+{
+  "name": "edge-demo-app",
+  "version": "1.0.0",
+  "description": "Interactive Test Web Application for EdgeDeploy CI/CD",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
